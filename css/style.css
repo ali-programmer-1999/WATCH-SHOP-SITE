@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Inter:wght@400;500&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Source+Serif+4:wght@400;600&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Francois One', sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom,rgb(82, 80, 66), rgb(104, 104, 104), rgb(124, 124, 124));
+}
+nav .head{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.4);
+}
+nav .head .contact{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    color: #000000;
+}
+nav .head .contact span{
+    font-family: 'Roboto', sans-serif;
+}
+nav .head .icon-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .head .icon-head a{
+    padding: 0 30px;
+    color: #000000;
+    font-size: 25px;
+
+}
+nav .head .icon-head .fab{
+    transition: all 0.2s ease;
+}
+nav .head .icon-head .fa-instagram:hover{
+    color: rgb(245, 0, 114);
+    font-weight: 400;
+}
+nav .head .icon-head .fa-telegram-plane:hover{
+    color: rgb(0, 110, 255);
+    font-weight: 400;
+}
+nav .head .icon-head .fa-whatsapp:hover{
+    color: #4dc247;
+    font-weight: 400;
+}
+nav .head .icon-head .fa-youtube:hover{
+    color: #bb0000;
+    font-weight: 200;
+}
+nav .head .icon-head .fa-facebook-square:hover{
+    color: #2650aa;
+    font-weight: 300;
+}
+/* ----end head--- */
+nav .body-nav{
+    display: flex;
+    justify-content: baseline;
+    width: 95%;  
+    margin: auto;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.4);
+}
+nav .body-nav h1{
+    font-family: 'Courgette', cursive;
+    font-size: 37px;
+    padding: 7px 40px;
+    font-weight: 900;
+}
+nav .body-nav h1 span{
+    color: rgb(255, 249, 202);
+    font-family: 'Courgette', cursive;
+}
+nav .body-nav .search{
+    height: 100%;
+    padding: 0 30px;
+    margin: auto 0;
+}
+nav .search input{
+    width: 700px;
+    height: 40px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    margin-left: -12px;
+}
+nav .search input::placeholder{
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: black;
+    opacity: 0.5;
+}
+nav .search a{
+    background-color: rgb(174, 197, 112);
+    height: 100%;
+    padding: 8px 40px;
+    color: white;
+    border-radius: 5px 0px 0 5px;
+}
+nav .account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+
+}
+nav .account a{
+    color: black;
+    margin: 0 10px;
+    width: 120px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    transition: all 0.5s ease;
+    background: linear-gradient(to right, #98a476, #ced2c2);
+}
+nav .account a:hover{
+    background:#f7fda7;
+}
+/* ------end nav body ----- */
+
+/* ------start nav footer ----- */
+
+nav .footer-nav {
+    margin: 5px auto;
+     width: 94%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+nav .order a{
+    font-family: 'Inter', sans-serif;
+    padding: 3px 9px;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    transition: all 0.5s ease;
+}
+nav .order a:hover{
+    color: rgb(240, 90, 90);
+}
+nav .continer{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+nav .continer a{
+   margin: 0 30px;
+   font-size: 20px;
+   color: #f1f3eb;
+   text-decoration: none;
+   transition: all 0.5s ease;
+}
+nav .continer a:hover{
+    color: black;
+}
