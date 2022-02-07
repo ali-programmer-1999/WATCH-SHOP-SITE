@@ -5,13 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Francois One', sans-serif;
+    transition: all 0.5s ease;
 }
 nav{
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom,rgb(82, 80, 66), rgb(104, 104, 104), rgb(124, 124, 124));
 }
-nav .head{
+#stop .head{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -19,7 +20,7 @@ nav .head{
     width: 98%;
     border-bottom: 1px solid rgba(233, 233, 233, 0.4);
 }
-nav .head .contact{
+#stop .head .contact{
     display: flex;
     font-size: 14px;
     align-items: center;
@@ -27,40 +28,40 @@ nav .head .contact{
     width: 35%;
     color: #000000;
 }
-nav .head .contact span{
+#stop .head .contact span{
     font-family: 'Roboto', sans-serif;
 }
-nav .head .icon-head{
+#stop .head .icon-head{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav .head .icon-head a{
+#stop .head .icon-head a{
     padding: 0 30px;
     color: #000000;
     font-size: 25px;
 
 }
-nav .head .icon-head .fab{
+#stop .head .icon-head .fab{
     transition: all 0.2s ease;
 }
-nav .head .icon-head .fa-instagram:hover{
+#stop .head .icon-head .fa-instagram:hover{
     color: rgb(245, 0, 114);
     font-weight: 400;
 }
-nav .head .icon-head .fa-telegram-plane:hover{
+#stop .head .icon-head .fa-telegram-plane:hover{
     color: rgb(0, 110, 255);
     font-weight: 400;
 }
-nav .head .icon-head .fa-whatsapp:hover{
+#stop .head .icon-head .fa-whatsapp:hover{
     color: #4dc247;
     font-weight: 400;
 }
-nav .head .icon-head .fa-youtube:hover{
+#stop .head .icon-head .fa-youtube:hover{
     color: #bb0000;
     font-weight: 200;
 }
-nav .head .icon-head .fa-facebook-square:hover{
+#stop .head .icon-head .fa-facebook-square:hover{
     color: #2650aa;
     font-weight: 300;
 }
@@ -77,15 +78,18 @@ nav .head .icon-head .fa-facebook-square:hover{
 }
 #fixed .body-nav{
     display: flex;
-    justify-content: baseline;
-    width: 95%;  
     margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;  
     border-bottom: 1px solid rgba(233, 233, 233, 0.4);
 }
 #fixed .body-nav h1{
     font-family: 'Courgette', cursive;
     font-size: 37px;
-    padding: 7px 40px;
+    white-space: nowrap;
+    width: 20%;
     font-weight: 900;
 }
 #fixed .body-nav h1 span{
@@ -93,17 +97,18 @@ nav .head .icon-head .fa-facebook-square:hover{
     font-family: 'Courgette', cursive;
 }
 #fixed .body-nav .search{
+    display: flex;
+    width: 50%;
     height: 100%;
     padding: 0 30px;
     margin: auto 0;
 }
 #fixed .search input{
-    width: 700px;
+    width: 90%;
     height: 40px;
     border-radius: 0px 5px 5px 0px;
     border: 1px solid gray;
     padding: 5px 10px;
-    margin-left: -12px;
 }
 #fixed .search input::placeholder{
     letter-spacing: 1px;
@@ -115,22 +120,24 @@ nav .head .icon-head .fa-facebook-square:hover{
 #fixed .search a{
     background-color: rgb(174, 197, 112);
     height: 100%;
+    width: 10%;
+    margin: auto;
     padding: 8px 40px;
     color: white;
     border-radius: 5px 0px 0 5px;
 }
 #fixed .account{
+    width: 19%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
 
 }
 #fixed .account a{
     color: black;
-    margin: 0 10px;
     width: 120px;
     text-decoration: none;
+    white-space: nowrap;
     border-radius: 10px;
     padding: 10px 30px;
     transition: all 0.5s ease;
@@ -179,17 +186,17 @@ nav .head .icon-head .fa-facebook-square:hover{
 
 /* ========start body======== */
 
-
- .slider{
-    scroll-behavior: smooth;
+/* ====== side bar home======= */
+.slider{
     width: 100%;
+    opacity: 0.9;
     height: 750px;
     flex-direction: column;
     overflow: hidden;
     position: relative;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
- .slider .content{
+.slider .content{
     position: absolute;
     top: 0;
     left: 0;
@@ -198,33 +205,22 @@ nav .head .icon-head .fa-facebook-square:hover{
     transition: all 1s ease-in-out;
 }
 .slider .content img .slide{
+    object-fit: cover;
     width: 100%;
     height: 750px;
 }
-.slider .stoped{
-    position: sticky;
-    z-index: 1;
-    top: 90%;
+/* ======end side bar home======= */
+
+/* ====== gift ======= */
+
+#gift .pic{
+    width: 98%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
 }
-.slider .stoped a{
-    background-color: #161616;
-    margin: 0 50px;
-    padding: 10px 10px;
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    opacity: .8;
-}
-.slider .stoped a:hover{
-    background: rgb(245, 239, 239);
-}
-.slider .stoped a:active{
-    background: red;
+#gift .pic img{
+    width: 49%;
 }
 
 
