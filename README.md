@@ -1,2 +1,2 @@
 # WATCH-SHOP-SITE
-only html &amp; css
+ html &amp; css & js
