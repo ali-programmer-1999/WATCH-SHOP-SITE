@@ -7,6 +7,7 @@
     
     transition: all 0.5s ease;
 }
+
 a{
     text-decoration: none;
     color:#000;
@@ -315,6 +316,27 @@ nav{
 #footer .row .item h2{
     color: #555;
 
+}
+#footer .banner{
+    text-align: center;
+}
+#footer .payment{
+    margin: 20px 0;
+}
+#footer .payment-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#footer .payment-icon .item {
+    margin: 0  5px;
+}
+
+#footer .payment-icon .item img{
+    width: 45px;
+    height: 35px;
 }
 
 
