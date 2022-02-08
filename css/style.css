@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Inter:wght@400;500&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Source+Serif+4:wght@400;600&family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Francois One', sans-serif;
     transition: all 0.5s ease;
-}
-
-a{
-    text-decoration: none;
-    color:#000;
 }
 nav{
     display: flex;
@@ -72,7 +67,6 @@ nav{
 }
 /* ----end head--- */
  #main{
-    font-family: 'Francois One', sans-serif;
      display: flex;
      flex-direction: column;
 }
@@ -91,16 +85,18 @@ nav{
     width: 95%;  
     border-bottom: 1px solid rgba(233, 233, 233, 0.4);
 }
-#fixed .body-nav h1{
-    font-family: 'Courgette', cursive;
-    font-size: 37px;
-    white-space: nowrap;
+
+#fixed .body-nav .logo-img{
     width: 20%;
-    font-weight: 900;
+    margin-top: 5px;
+    height: 100%;
 }
-#fixed .body-nav h1 span{
-    color: rgb(255, 249, 202);
-    font-family: 'Courgette', cursive;
+#fixed .body-nav img{
+    width: 100%;
+    height: 90px;
+
+    overflow: hidden;
+    object-fit: cover;
 }
 #fixed .body-nav .search{
     display: flex;
@@ -181,13 +177,14 @@ nav{
     text-align: center;
 }
 #fixed .continer a{
-   margin: 0 30px;
+    width: 100%;
+   margin: 0 3%;
    font-size: 20px;
    color: #f1f3eb;
    text-decoration: none;
    transition: all 0.5s ease;
 }
-#fixed.continer a:hover{
+#fixed .continer a:hover{
     color: black;
 }
 
@@ -221,11 +218,10 @@ nav{
 /* ====== gift ======= */
 
 #gift{
-    font-family: 'Francois One', sans-serif;
     width: 100%;
     background: linear-gradient(to bottom, #f8f8f8, #e8dee1);
     height: 100%;
-    min-height: 110vh;
+    min-height: 100vh;
     margin: 0 auto;
     box-shadow:0 0 0  rgba(0, 0, 0, 0.4);
 }
@@ -291,57 +287,11 @@ nav{
 #gift .gift-box .text-gift a:hover{
     color: rgb(203, 72, 255);
     background: white;
+    transform: scaleX(1.2);
 }
 
-#footer .footer{
-    max-width: 1200px;
-    height: auto;
-    margin: auto;  
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-#footer .row{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-    padding: 5% 2%;
+/*======= end gift section======= */
 
-}
-#footer .row .item{
-    width: 25%;
-    height: 100%;
-    padding: 1%;
-}
-#footer .row .item h2{
-    color: #555;
-
-}
-#footer .banner{
-    text-align: center;
-}
-#footer .payment{
-    margin: 20px 0;
-}
-#footer .payment-icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-#footer .payment-icon .item {
-    margin: 0  5px;
-}
-
-#footer .payment-icon .item img{
-    width: 45px;
-    height: 35px;
-}
-#footer .footer-bottom{
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 
 
