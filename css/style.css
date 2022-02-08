@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Inter:wght@400;500&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Source+Serif+4:wght@400;600&family=Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Francois One', sans-serif;
+    
     transition: all 0.5s ease;
+}
+a{
+    text-decoration: none;
+    color:#000;
 }
 nav{
     display: flex;
@@ -67,6 +71,7 @@ nav{
 }
 /* ----end head--- */
  #main{
+    font-family: 'Francois One', sans-serif;
      display: flex;
      flex-direction: column;
 }
@@ -215,6 +220,7 @@ nav{
 /* ====== gift ======= */
 
 #gift{
+    font-family: 'Francois One', sans-serif;
     width: 100%;
     background: linear-gradient(to bottom, #f8f8f8, #e8dee1);
     height: 100%;
@@ -286,6 +292,30 @@ nav{
     background: white;
 }
 
+#footer .footer{
+    max-width: 1200px;
+    height: auto;
+    margin: auto;  
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#footer .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    padding: 5% 2%;
+
+}
+#footer .row .item{
+    width: 25%;
+    height: 100%;
+    padding: 1%;
+}
+#footer .row .item h2{
+    color: #555;
+
+}
 
 
 
