@@ -11,19 +11,21 @@
 nav{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom,rgb(82, 80, 66), rgb(104, 104, 104), rgb(124, 124, 124));
+    background: linear-gradient(to bottom,rgb(61, 61, 59), rgb(70, 70, 70), rgb(124, 124, 124));
 }
 #stop .head{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 98%;
+    width: 100%;
     border-bottom: 1px solid rgba(233, 233, 233, 0.4);
+    background: rgb(190, 218, 126);
 }
 #stop .head .contact{
     display: flex;
     font-size: 14px;
+    font-weight: 600;
     align-items: center;
     justify-content: space-between;
     width: 35%;
@@ -121,14 +123,20 @@ nav{
     opacity: 0.5;
 }
 #fixed .search a{
-    background-color: rgb(174, 197, 112);
+    background-color: rgb(99, 134, 0);
     height: 100%;
     width: 10%;
     margin: auto;
-    padding: 8px 40px;
+    padding: 9px 40px;
+    text-align: center;
     color: white;
     border-radius: 5px 0px 0 5px;
+    color: #000000;
 }
+#fixed .search a:hover{
+    background-color: rgb(207, 211, 194);
+}
+
 #fixed .account{
     width: 19%;
     display: flex;
@@ -140,15 +148,34 @@ nav{
     color: black;
     margin:0 4px ;
     width: 120px;
-    text-decoration: none;
-    white-space: nowrap;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
     padding: 10px 30px;
     transition: all 0.5s ease;
-    background: linear-gradient(to right, #98a476, #ced2c2);
+    background: linear-gradient(to right, #bcbeb4, #e2ebc9);
+    white-space: nowrap;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 100;
+    -webkit-box-shadow: 0 4px 5px 2px #000000;
+    -moz-box-shadow: 0 4px 5px 2px #000000;
+    box-shadow: 0 4px 5px 2px #000000;
+    border: outset #FFFFFF 1px;
+    text-decoration: none;
+    color: #000000;
 }
 #fixed .account a:hover{
     background:#f7fda7;
+    border: outset #FFFFFF 1px;
+    background: #C4A6F1;
+    background-image: -webkit-linear-gradient(top, #98a476, #afc961);
+    background-image: -moz-linear-gradient(top, #98a476, #a5b969);
+    background-image: -ms-linear-gradient(top, #98a476, #a2bb57);
+    background-image: -o-linear-gradient(top, #98a476, #92a755);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    text-decoration: none;
 }
 /* ------end nav body ----- */
 
@@ -196,6 +223,7 @@ nav{
     position: relative;
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 .home img{
     width: 100%;
@@ -207,10 +235,15 @@ nav{
     font-size: 40px;
     text-decoration: none;
     padding: 20px;
-    border-radius: 20px;
+    width: 200px;
+    height: 500px;
+    margin: auto;
     top: 50%;
     transform: translate(0,-50%);
     
+}
+.home a:hover{
+    background-color: rgb(175, 175, 175);
 }
 .side{
     display: none;
@@ -220,10 +253,19 @@ nav{
     display: block;
 }
 .prev{
-    left: 1%;
+    left: -9%;
+    display: flex;
+    border-radius: 0px 50% 50% 0px;
+    align-items: center;
+    justify-content: flex-end;
 }
 .next{
-    right: 1%;
+    right: -9%;
+    display: flex;
+    border-radius: 50% 0px 0px 50%;
+
+    align-items: center;
+    justify-content: flex-start;
 }
 /* ======end side bar home======= */
 
@@ -285,22 +327,37 @@ nav{
 }
 
 #gift .gift-box .text-gift a{
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin: 10px auto;
-    background: rgb(203, 72, 255);
-    border-radius: 10px;
-    font-size: 25px;
-    color: white;
+        width: 30%;
+        white-space: nowrap;
+        margin: auto;
+        border-radius: 25px;
+        color: #FFFFFF;
+        font-size: 27px;
+        font-weight: 100;
+        padding: 24px;
+        background-color: #F63DD0;
+        -webkit-box-shadow: 0 4px 5px 2px #000000;
+        -moz-box-shadow: 0 4px 5px 2px #000000;
+        box-shadow: 0 4px 5px 2px #000000;
+        text-shadow: 5px 3px 9px #000000;
+        border: outset #FFFFFF 1px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
 }
 #gift .gift-box .text-gift a:hover{
-    color: rgb(203, 72, 255);
-    background: white;
-    transform: scaleX(1.2);
+    border: outset #FFFFFF 1px;
+    background: #C4A6F1;
+    background-image: -webkit-linear-gradient(top, #C4A6F1, #570B3D);
+    background-image: -moz-linear-gradient(top, #C4A6F1, #570B3D);
+    background-image: -ms-linear-gradient(top, #C4A6F1, #570B3D);
+    background-image: -o-linear-gradient(top, #C4A6F1, #570B3D);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-decoration: none;
 }
+
 
 /*======= end gift section======= */
 
