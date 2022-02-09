@@ -1,20 +1,24 @@
+//===============section brand======================
 const slides = document.querySelector('.content');
 const slidescount= slides.childElementCount;
-const maxleft=(slidescount-1)* 1600 * -1;
+const maxleft=(slidescount-1)* 300 * -0.5;
 
 let current = 0;
 
 setInterval(function(){
     if(current > maxleft){
-        current -= 1600;
+        current -= 200;
         slides.style.left = current + "px";
     }
     else{
         current = 0;
         slides.style.left = 0;
     }
-},7500);
-// ==============================
+},0);
+
+
+// =======================section home=================
+
 var slid = document.getElementsByClassName("side");
 var prev = document.querySelector('.prev');
 var next = document.querySelector('.next');

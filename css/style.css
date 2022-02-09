@@ -410,64 +410,78 @@ nav{
 }
 /*======= end buy section======= */
 
-#brand img{
-    width: 7%;
+#brand{
+    margin: 2% 0;
+    transition: all 0.1 ease;
 }
-#brand .slider{
+
+#brand h1{
     width: 100%;
-    opacity: 0.9;
-    height: 720px;
-    flex-direction: column;
+    margin-bottom: 3%;
+    letter-spacing: 1px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#brand .slid-img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    padding: 0 20px;
+}
+#brand .slid-img:hover{
+    transform: scale(1.2);
+}
+
+#brand .slider {
     overflow: hidden;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    opacity: 0.9;
+    flex-direction: column;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 30px 10px rgba(128, 128, 128, 0.5);
 }
 #brand .slider .content{
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
+    height: 200px;
+    align-items: center;
     width: 100%;
     transition: all 1s ease-in-out;
 }
-#brand .slider .content img .slide{
-    object-fit: cover;
-    width: 100%;
-    height: 750px;
-}
-/* ===================================animation================================ */
 
-@keyframes slid-home{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
+/* ==================== end brand =================== */
+/* ==================== start footer =================== */
 #footer .footer{
-    max-width: 1200px;
+    max-width: 100%;
     height: auto;
     margin: auto;  
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Abel', sans-serif;
 }
 #footer .row{
-    width: 100%;
+    margin: auto;
+    width: 99%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     padding: 5% 2%;
-
 }
 #footer .row .item{
-    width: 25%;
+    text-align: center;
+    width: 24%;
     height: 100%;
-    padding: 1%;
+    white-space: nowrap;
+    margin: 0 10px;
+ 
 }
 #footer .row .item h2{
     color: #555;
-
+    font-size: 29px;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 #footer .banner{
     text-align: center;
@@ -496,4 +510,17 @@ nav{
     margin-bottom: 20px;
     padding: 0 2%;
 }
+/* ==================== end footer =================== */
+
+/* ===================================animation================================ */
+
+@keyframes slid-home{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
