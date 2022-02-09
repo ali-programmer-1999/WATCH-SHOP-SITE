@@ -24,7 +24,7 @@ nav{
     align-items: center;
     width: 100%;
     border-bottom: 1px solid rgba(233, 233, 233, 0.4);
-    background: rgb(202, 207, 190);
+    background: rgb(100, 100, 100);
 }
 #stop .head .contact{
     display: flex;
@@ -128,7 +128,7 @@ nav{
     opacity: 0.5;
 }
 #fixed .search a{
-    background-color: rgb(99, 134, 0);
+    background-color: rgb(122, 136, 84);
     height: 100%;
     width: 10%;
     margin: auto;
@@ -349,8 +349,8 @@ nav{
         text-shadow: 5px 3px 9px #000000;
         border: outset #FFFFFF 1px;
         text-decoration: none;
-        display: inline-block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
 }
 #gift .gift-box .text-gift a:hover{
     border: outset #FFFFFF 1px;
@@ -455,12 +455,117 @@ nav{
 }
 
 /* ==================== end brand =================== */
+
+/* ==================== start shop =================== */
+
+
+#shop{
+    margin: 4% auto;
+    box-shadow: 0px 0px 15px 3px gray;
+
+}
+#shop .stor{
+    display: flex;
+    flex-direction: row;
+}
+#shop .title{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+}
+#shop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#shop .box-shop{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    margin: 2% 5%;
+    flex-direction: column;
+}
+#shop .box-shop .continer-shop::-webkit-scrollbar{
+    width: 20px;
+    
+
+}
+#shop .box-shop .continer-shop::-webkit-scrollbar-track{
+    background: linear-gradient(to bottom,rgb(128, 128, 126), rgb(70, 70, 70), rgb(124, 124, 124));
+}
+#shop .box-shop .continer-shop::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,rgb(160, 160, 60), rgb(181, 190, 145), rgb(124, 124, 124));
+    border-radius: 50px;
+    height: 20px;
+    
+}
+
+
+#shop .box-shop .continer-shop{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    box-shadow: 5px 1px 5px 5px rgba(0, 0, 0 , 0.2);
+    border-radius: 5px;
+    border: 1px solid rgb(192, 192, 192);
+}
+#shop .box-shop .continer-shop .item-shop{
+    display: flex;
+    background-color: transparent;
+
+    width: 100%;
+    height: 270px;
+    flex-direction: row;
+    flex-shrink: 0;
+    padding: 4%;
+    margin: 1px 0;
+    overflow: hidden;
+    border: 1px solid gray;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.4);
+}
+#shop .item-shop a{
+    width: 50%;
+    height: 100%;
+}
+#shop .item-shop a:hover{
+    transform: scale(1.1);
+}
+#shop .item-shop h2{
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: rgb(41, 41, 41);
+}
+#shop .item-shop h2 strong{
+    font-size: 18px;
+    color: #000000;
+}
+#shop .title-box{
+    text-align: center;
+    color: #2d360f;
+    margin-bottom: 2%;
+    text-shadow: 10px 10px 10px rgb(109, 109, 109);
+}
+#shop .item-shop h2 span{
+    font-size: 12px;
+    color: red;
+}
+
+
+
+
 /* ==================== start footer =================== */
 #footer .footer{
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    padding-bottom: 20px;
     margin: auto;  
     font-family: 'Abel', sans-serif;
+    border-top: 1px solid gray;
+    box-shadow: 0px 0px 15px 2px gray;
 }
 #footer .row{
     margin: auto;
@@ -522,5 +627,4 @@ nav{
         opacity: 1;
     }
 }
-
 
