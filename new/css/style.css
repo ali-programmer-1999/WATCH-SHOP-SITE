@@ -151,6 +151,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.6rem;
 
 }
 #fixed .account a{
@@ -209,7 +210,7 @@ nav{
 /* ========start body======== */
 
 #footer {
- 
+    font-size: 1.5rem;
     background: #555;
 }
 #footer .footer{
@@ -224,7 +225,7 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5% 2%;
+    padding: 0 2%;
 
 }
 #footer .row .item{
@@ -424,16 +425,396 @@ nav{
 
 }
 #shop .shop-left{
+    padding-right: 3%;
     font-size: 1.6rem;
+    position: relative;
 }
-select{
+
+.sliad-bar{
+    cursor: pointer;
     width: 100%;
-    height: 40px;
-    font-size: 2rem;
-    outline: none;
-    margin-bottom: 5px;
+    height: auto;
+    position: fixed;
+
+}
+.list ul{
+    display: none;
+
+}
+.list li{
+    padding: 10px;
+    border-bottom: 2px solid #555;
+    margin: 5px 0;
+    list-style: none;
+  
     
 }
-.list{
-    margin: 4px;
+ 
+
+/* ----------------------- */
+
+.sliad-bar{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+  
+    padding: 0 5%;
 }
+.sliad-bar .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar .links li{
+    list-style: none;
+}
+
+.sliad-bar #nav-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-burger {
+ 
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+.line:nth-child(1){
+    transform: translateY(8px) rotate(-227deg);
+
+}
+.line:nth-child(2){
+    display: none;
+   
+   }
+   .line:nth-child(3){
+    transform: translateX(-7px) rotate(-136deg);
+   
+   }
+@media screen and (min-width: 500px){
+    .sliad-bar .links{
+        float: none;
+        position: absolute;
+        z-index: 9;
+        background-color: rgba(0,0,0,.8);
+        left: 18px;
+        top: 100px;
+        right: 0;
+        bottom: 100%;
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        transition: .3s ease-in-out;
+    } 
+    .sliad-bar :checked ~.links{
+        top: 40px;
+        bottom: 0; 
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .list-1 :checked ~.links{
+        top: 88px;
+        bottom: -200px;
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .list-2 :checked ~.links{
+        top: 133px;
+        bottom: -150px;
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .list-3 :checked ~.links{
+        top: 179px;
+        bottom: -200px;
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .list-4 :checked ~.links{
+        top: 224px;
+        bottom: -600px;
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .list-5 :checked ~.links{
+        top: 268px;
+        bottom: -200px;
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .list-6 :checked ~.links{
+        top: 313px;
+        bottom: -500px;
+        width: 90%;
+        left: 18px;
+    }
+    .sliad-bar .icon-burger{
+        display: block;
+    }
+    .sliad-bar .links{
+        display: block;
+
+    }
+    .sliad-bar  :checked ~ .icon-burger .line:nth-child(1){
+        transform: translateY(8px) rotate(227deg);
+    
+    }
+    .sliad-bar  :checked ~ .icon-burger .line:nth-child(2){
+        display: none;
+       
+       }
+       .sliad-bar  :checked ~ .icon-burger .line:nth-child(3){
+        transform: translateX(-7px) rotate(136deg);
+       
+       }
+}
+    
+
+/* list-1 */
+.sliad-bar .list-1.links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar #nav-1-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-1-burger {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-1-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+   /* End list-1 */
+
+   /* Start list-2 */
+  
+.sliad-bar .list-2.links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar #nav-2-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-2-burger {
+    position: absolute;
+    right: 5%;
+    top: 34%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-2-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+   /* End list-2 Start */
+
+   /* Start list-3 */
+   .sliad-bar .list-3.links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar #nav-3-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-3-burger {
+    position: absolute;
+    right: 5%;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-3-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+   /* End list-3 */
+
+/* Start list-4 */
+
+   .sliad-bar .list-4.links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar #nav-4-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-4-burger {
+    position: absolute;
+    right: 5%;
+    top: 62%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-4-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+/* End list-4 */
+/* Start list-5 */
+.sliad-bar .list-5.links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar #nav-5-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-5-burger {
+    position: absolute;
+    right: 5%;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-5-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+/* End list-5 */
+/* Start list-6 */
+.sliad-bar .list-6.links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+
+}
+.sliad-bar #nav-6-toggle{
+    position: absolute;
+    display: none;
+}
+.sliad-bar .icon-6-burger {
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+.sliad-bar .icon-6-burger .line{
+    width: 14px;
+    height: 3px;
+    background-color: chocolate;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+/* End list-6 */
