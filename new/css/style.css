@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Courgette&family=Dongle:wght@700&family=Fira+Sans&family=Francois+One&family=IBM+Plex+Mono&family=Inter:wght@400;500&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@400;500;600&family=Rubik:wght@400;600&family=Source+Serif+4:wght@400;600&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+html{
+    font-size: 10px;
+}
+nav{
+    font-family: 'Francois One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom,rgb(82, 80, 66), rgb(104, 104, 104), rgb(124, 124, 124));
+}#stop{
+    font-family: 'Francois One', sans-serif;
+
+}
+#stop .head{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.4);
+}
+#stop .head .contact{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    color: #000000;
+}
+#stop .head .contact span{
+    font-family: 'Roboto', sans-serif;
+}
+#stop .head .icon-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#stop .head .icon-head a{
+    padding: 0 30px;
+    color: #000000;
+    font-size: 25px;
+
+}
+#stop .head .icon-head .fab{
+    transition: all 0.2s ease;
+}
+#stop .head .icon-head .fa-instagram:hover{
+    color: rgb(245, 0, 114);
+    font-weight: 400;
+}
+#stop .head .icon-head .fa-telegram-plane:hover{
+    color: rgb(0, 110, 255);
+    font-weight: 400;
+}
+#stop .head .icon-head .fa-whatsapp:hover{
+    color: #4dc247;
+    font-weight: 400;
+}
+#stop .head .icon-head .fa-youtube:hover{
+    color: #bb0000;
+    font-weight: 200;
+}
+#stop .head .icon-head .fa-facebook-square:hover{
+    color: #2650aa;
+    font-weight: 300;
+}
+/* ----end head--- */
+ #main{
+    font-family: 'Francois One', sans-serif;
+     display: flex;
+     flex-direction: column;
+}
+#fixed{
+    font-family: 'Francois One', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#fixed .body-nav{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;  
+    border-bottom: 1px solid rgba(233, 233, 233, 0.4);
+}
+
+#fixed .body-nav .logo-img{
+    width: 20%;
+    margin-top: 5px;
+    height: 100%;
+}
+#fixed .body-nav img{
+    width: 100%;
+    height: 90px;
+
+    overflow: hidden;
+    object-fit: cover;
+}
+#fixed .body-nav .search{
+    display: flex;
+    width: 50%;
+    height: 40px;
+    padding: 0 30px;
+    margin: auto 0;
+}   
+#fixed .body-nav .search i{
+    font-size: 2rem;
+}
+#fixed .search input{
+    width: 90%;
+    height: 40px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    outline: none;
+}
+#fixed .search input::placeholder{
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: black;
+    opacity: 0.5;
+}
+#fixed .search a{
+    background-color: rgb(174, 197, 112);
+    height: 100%;
+    width: 13%;
+    margin: auto;
+    padding: 8px 40px;
+    color: white;
+    border-radius: 5px 0px 0 5px;
+}
+#fixed .account{
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#fixed .account a{
+    color: black;
+    margin:0 4px ;
+    width: 120px;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 10px;
+    padding: 10px 30px;
+    transition: all 0.5s ease;
+    background: linear-gradient(to right, #98a476, #ced2c2);
+}
+#fixed .account a:hover{
+    background:#f7fda7;
+}
+/* ------end nav body ----- */
+
+/* ------start nav footer ----- */
+
+#fixed .footer-nav {
+    margin: 5px auto;
+     width: 94%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+#fixed .order a{
+    font-family: 'Inter', sans-serif;
+    padding: 3px 9px;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    transition: all 0.5s ease;
+}
+#fixed.order a:hover{
+    color: rgb(240, 90, 90);
+}
+#fixed .continer{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+#fixed .continer a{
+    width: 100%;
+   margin: 0 3%;
+   font-size: 20px;
+   color: #f1f3eb;
+   text-decoration: none;
+   transition: all 0.5s ease;
+}
+#fixed .continer a:hover{
+    color: black;
+}
+
+/* ========start body======== */
+
+#footer {
+ 
+    background: #555;
+}
+#footer .footer{
+    max-width: 1200px;
+    height: auto;
+    margin: auto;  
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: #555;
+}
+#footer .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5% 2%;
+
+}
+#footer .row .item{
+    width: 25%;
+    height: 100%;
+    padding: 1%;
+}
+#footer .row .item h2{
+    color: #555;
+
+}
+#footer .banner{
+    text-align: center;
+}
+#footer .payment{
+    margin: 20px 0;
+    padding: 0   2%;
+}
+#footer .payment-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#footer .payment-icon .item {
+    margin: 0  5px;
+}
+
+#footer .payment-icon .item img{
+    width: 45px;
+    height: 35px;
+}
+#footer .footer-bottom{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 2%;
+}
+
+/*  Start Watch Popular Section */
+#shop {
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+#shop .shop{
+ max-width: 1500px;
+ /* height: 100vh; */
+ margin: auto;
+ display: flex;
+ flex-direction: row;
+}
+#shop .shop-left{
+    width: 25%;
+    height: auto;
+
+}
+#shop .shop-right{
+    width: 75%;
+    height: auto;
+
+}
+#shop .shop-right p{
+    font-size: 3rem;
+    margin-top: 20px;
+}
+#shop .shop-right .brand{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#shop .shop-right .brand-item{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0;
+}
+#shop .shop-right .item{
+    display: flex;
+    flex-direction: row;
+    width: 16%;
+    height: 10%;
+    margin: 4px 5px;
+    border: 2px solid lightslategrey;
+    padding: 10px;
+    align-items: center;
+}
+
+#shop .shop-right .item img{
+   width: 100%;
+   height: 100%;
+}
+#shop .off{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+}
+#shop .off-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(/image/off/AR11336_SML.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 2px solid lightgray;
+    padding: 15px;
+}
+
+#shop .off-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(/image/off/GA-200RG-1A_SML.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 2px solid lightgray;
+    padding: 15px;
+}
+#shop .off h2{
+    margin-top: 20px;
+    color: rgb(245, 0, 114);
+}
+#shop .off strong{
+    font-size: 4rem;
+}
+#shop .off p{
+    margin-top: 20px;
+    width: 75%;
+    font-size: 1.7rem;
+}
+#shop .off .pay{
+    margin-top: 25px;
+    color:rgb(82, 80, 66)
+}
+#shop .off .btn{
+    margin-top: 15px;
+    outline: none;
+    padding: 10px 40px;
+    border: 2px solid tomato;
+    color: tomato;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    outline: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+#shop .off .btn:hover{
+    background-color: #FF3EA5FF;
+    color: #f1f3eb;
+    font-weight: 700;
+    border: none;
+}
+#shop .off .pay-off{
+    margin-top: 15px;
+    color: rgb(245, 0, 114);
+    font-size: 4rem;
+}
+#shop .off .off-btn{
+    text-align: center;
+}
+/*  End Watch Popular Section */
+#shop .watches{
+    margin-top: 50px;
+}
+ #shop .watches .watches-item{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap;  */
+    font-size: 10px;
+   
+}
+
+#shop .watches .watches-item p{
+ 
+    font-size: 15px;
+}
+#shop .watches .watches-item .item{
+    flex-direction: column;
+    width: 24%;
+    justify-content: flex-start;
+    
+    /* width: 25%; */
+}
+#shop .watches .watches-item .item .icon{
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+}
+#shop .watches img{
+    width: 100%;
+    height: 100%;
+}
+#shop .watches .w-info-{
+    font-size: 200px;
+    color:rgb(0, 110, 255)
+    forestgreen
+
+}
+#shop .shop-left{
+    font-size: 1.6rem;
+}
+select{
+    width: 100%;
+    height: 40px;
+    font-size: 2rem;
+    outline: none;
+    margin-bottom: 5px;
+    
+}
+.list{
+    margin: 4px;
+}
