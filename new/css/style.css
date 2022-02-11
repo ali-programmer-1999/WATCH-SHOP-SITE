@@ -284,6 +284,7 @@ nav{
     height: auto;
     background-color: rgba(31, 200, 219,.8);
     background-image: linear-gradient(140deg, rgba(234, 222, 219,.8) 0%, rgba(188, 112, 164,.8) 50%, rgb(191, 214, 65,.8) 75%);
+    border-radius: 0 0 10px 10px;
 
 }
 #shop .off-0{
@@ -952,7 +953,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/new/image/left/beauty_round_150.png);
+    background-image: url(/new/image/left/accessories_round_150.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -969,7 +970,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/new/image/left/beauty_round_150.png);
+    background-image: url(/new/image/left/accessories_round_150.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -986,5 +987,50 @@ nav{
 }
 #shop .shop-left .kala .right  h4{
     font-size: 2.2rem;
+}
+
+#shop .shop-left .kala .right .right-item:nth-child(2) .img{
+    background-image: url(/new/image/left/handbags_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(3) .img{
+    background-image: url(/new/image/left/beauty_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(4) .img{
+    background-image: url(/new/image/left/jewelry_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(5) .img{
+    background-image: url(/new/image/left/outerwear_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(6) .img{
+    background-image: url(/new/image/left/ladies_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(7) .img{
+    background-image: url(/new/image/left/mens_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(8) .img{
+    background-image: url(/new/image/left/pens_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(9) .img{
+    background-image: url(/new/image/left/preowned_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(10) .img{
+    background-image: url(/new/image/left/sale_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(11) .img{
+    background-image: url(/new/image/left/shoes_round_150.png);
+    
+}
+#shop .shop-left .kala .right .right-item:nth-child(12) .img{
+    background-image: url(/new/image/left/mens_round_150.png);
+    
 }
 /* End Shop left */
