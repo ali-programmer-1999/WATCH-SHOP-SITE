@@ -932,65 +932,53 @@ nav{
    
 }
 #shop .shop-left .kala .right .right-item{
-   
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-
     position: relative;
+
    
 }
 #shop .shop-left .kala .right .right-item .img{
     width: 100%;
-    height: 240px;
+    height: 200px;
     border-radius: 50%;
-    background-color: rgb(75, 212, 21);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#shop .shop-left .kala .right .right-item .right-item::after{
-    content: '';
-    width: 100%;
-    top: 0;
-    position: absolute;
-    left: 0;
-    height: 240px;
-    border-radius: 50%;
-    background-color: rgba(85, 85, 85,.3);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-
-}
-#shop .shop-left .kala .right .right-item .right-item::before{
-    content: '';
-    width: 100%;
-    top: 0;
-    position: absolute;
-    left: 0;
-    height: 240px;
-    border-radius: 50%;
-    background-color: rgba(85, 85, 85, 0.3);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-
-}
-#shop .shop-left .kala .right .right-item:hover{
    
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/new/image/left/beauty_round_150.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgb(75, 212, 21); */
+    background-blend-mode: multiply;
+}
+#shop .shop-left .kala .right .right-item .img:hover{
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+   
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/new/image/left/beauty_round_150.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(97, 107, 93,.3);
+    background-blend-mode: multiply;
+}
 
+#shop .shop-left .kala .right .right-item:hover h4{
+    border-bottom:2px solid crimson;
 }
 #shop .shop-left .kala .right .right-item img{
     width: 100%;
@@ -999,16 +987,4 @@ nav{
 #shop .shop-left .kala .right  h4{
     font-size: 2.2rem;
 }
-#shop .shop-left .kala .right  h4:hover{
-  border-bottom:1px solid rgb(55, 0, 255);
-}
-/* #shop .shop-left {
-    width: 50%;
-    height: auto;
-    background-color: #555;
-    
-   
-} */
-
-
 /* End Shop left */
