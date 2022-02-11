@@ -282,6 +282,8 @@ nav{
 #shop .shop-left{
     width: 25%;
     height: auto;
+    background-color: rgba(31, 200, 219,.8);
+    background-image: linear-gradient(140deg, rgba(234, 222, 219,.8) 0%, rgba(188, 112, 164,.8) 50%, rgb(191, 214, 65,.8) 75%);
 
 }
 #shop .off-0{
@@ -363,6 +365,7 @@ nav{
     background-position: right;
     border: 2px solid lightgray;
     padding: 15px;
+
 }
 #shop .off h2{
     margin-top: 20px;
@@ -642,7 +645,7 @@ nav{
     }
     .sliad-bar .list-5 :checked ~.links{
         top: 268px;
-        bottom: -200px;
+        bottom: -1000px;
         width: 90%;
         left: 18px;
     }
