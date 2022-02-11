@@ -18,7 +18,13 @@
         <!--===========navgation-bar===========-->
             <nav id="stop">
                 <div class="head">
-
+                    <script>
+                        var myVar = setInterval(myTimer, 1000);
+                        function myTimer() {
+                            var d = new Date();
+                            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+                        }
+                        </script>
                     <div class="icon-head">
                         <a href="#"><i class="fab fa-facebook-square"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></i></a>
@@ -58,6 +64,7 @@
                         <a href="#">MAN</a>
                         <a href="#">WOMAN</a>
                     </div>
+                    <p id="demo" style="color: rgb(213, 219, 84);font-size: 25px;"></p>
                 </div>
             </nav>
             <!-- =======responsive code============== -->
