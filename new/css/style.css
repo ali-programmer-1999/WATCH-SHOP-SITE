@@ -269,6 +269,7 @@ nav{
 #shop {
     font-family: sans-serif;
     margin-bottom: 50px;
+    padding-top: 2rem
 }
 #shop .shop{
  max-width: 1500px;
@@ -276,15 +277,35 @@ nav{
  margin: auto;
  display: flex;
  flex-direction: row;
+ 
 }
 #shop .shop-left{
     width: 25%;
     height: auto;
 
 }
+#shop .off-0{
+    display: flex;
+    flex-wrap: wrap;
+}
+#shop .off-0 .right{
+    width: 50%;
+    height: auto;
+}
+#shop .off-0 .left{
+    width: 50%;
+    height: auto;
+}
+
+#shop .off-0 img{
+    width: 100%;
+    height: 100%;
+    cursor:-webkit-zoom-in;
+}
 #shop .shop-right{
     width: 75%;
     height: auto;
+    padding: 0 10px;
 
 }
 #shop .shop-right p{
@@ -327,7 +348,7 @@ nav{
 #shop .off-right{
     width: 50%;
     height: 100%;
-    background-image: url(/image/off/AR11336_SML.webp);
+    background-image: url(/new/image/off/AR11336_SML.webp);
     background-repeat: no-repeat;
     background-position: right;
     border: 2px solid lightgray;
@@ -337,7 +358,7 @@ nav{
 #shop .off-left{
     width: 50%;
     height: 100%;
-    background-image: url(/image/off/GA-200RG-1A_SML.webp);
+    background-image: url(/new/image/off/GA-200RG-1A_SML.webp);
     background-repeat: no-repeat;
     background-position: right;
     border: 2px solid lightgray;
@@ -423,6 +444,63 @@ nav{
     color:rgb(0, 110, 255)
     forestgreen
 
+}
+/*  Start Customer */
+
+#shop .customer-about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}#shop .customer-1{
+    width: 32%;
+    height: auto;
+    padding: 10px;
+    border: 2px solid lightslategrey;
+    margin: 0 2px;
+}
+#shop .customer h1{
+    margin: 20px 0;
+    margin-left: 20px ;
+
+    font-size: 3rem
+}
+#shop .customer-1 p{
+    font-size: 1.3rem;
+    line-height: 20px;
+}
+#shop .customer-1 h5{
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+/*  End Customer */
+
+#shop .wellcom {
+    padding: 0px 20px
+}
+#shop .wellcom h1{
+    font-size: 3rem;
+    margin-top: 60px;
+}
+
+#shop .wellcom p{
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+#shop .wellcom ul{
+
+    font-size: 1.3rem;
+   padding-left: 20px;
+}
+#shop .wellcom ul li{
+    margin-top: 5px;
+}
+#shop .wellcom h2{
+    font-size: 1.7rem;
+}
+#shop .wellcom h3{
+    font-size: 1.6rem;
+    margin-top: 20px;
 }
 #shop .shop-left{
     padding-right: 3%;
@@ -520,7 +598,8 @@ nav{
         float: none;
         position: absolute;
         z-index: 9;
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(31, 200, 219,.8);
+        background-image: linear-gradient(140deg, rgba(234, 222, 219,.8) 0%, rgba(188, 112, 164,.8) 50%, rgb(191, 214, 65,.8) 75%);
         left: 18px;
         top: 100px;
         right: 0;
@@ -818,3 +897,115 @@ nav{
 
 }
 /* End list-6 */
+
+/*Start Shop left */
+#shop .shop-left .kala  {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* #shop .shop-left .kala .left {
+    width: 50%;
+    height: auto;
+    background-color: #555;
+
+   
+} */
+#shop .shop-left .kala .right {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(212, 21, 21); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#shop .shop-left .kala .right .right-item{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    position: relative;
+   
+}
+#shop .shop-left .kala .right .right-item .img{
+    width: 100%;
+    height: 240px;
+    border-radius: 50%;
+    background-color: rgb(75, 212, 21);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop .shop-left .kala .right .right-item .right-item::after{
+    content: '';
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 240px;
+    border-radius: 50%;
+    background-color: rgba(85, 85, 85,.3);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+
+}
+#shop .shop-left .kala .right .right-item .right-item::before{
+    content: '';
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 240px;
+    border-radius: 50%;
+    background-color: rgba(85, 85, 85, 0.3);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+
+}
+#shop .shop-left .kala .right .right-item:hover{
+   
+
+}
+#shop .shop-left .kala .right .right-item img{
+    width: 100%;
+    height: 100%;
+}
+#shop .shop-left .kala .right  h4{
+    font-size: 2.2rem;
+}
+#shop .shop-left .kala .right  h4:hover{
+  border-bottom:1px solid rgb(55, 0, 255);
+}
+/* #shop .shop-left {
+    width: 50%;
+    height: auto;
+    background-color: #555;
+    
+   
+} */
+
+
+/* End Shop left */
