@@ -10,48 +10,75 @@
    }
    #res-nav{
         position: sticky;
+        flex-wrap: wrap;
         top: 0;
         z-index: 1;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         transition: all 0.1s ease;
         margin: auto;
-        height: 80px;
+        height: 110px;
         width: 100%;
    }
-   #res-nav ul{
+   #res-nav .list-res{
+       width: 30%;
        list-style-type: none;
+       text-align: end;
        margin-right: 2%;
    }
    #res-nav img{
        width: 100%;
-       height: 100%;
+       height: 90%;
    }
    #res-nav .logo-res{
        height: 80px;
-       width: 20%;
+       width: 30%;
+       right: 35%;
+       position: absolute;
+   }
+   #res-nav .basket-res{
+       position: absolute;
+       display: flex;
+       top: 20%;
+       right: 90%;
+       left: 5%;
+   }
+   #res-nav .basket-res a{
+       color: white;
+       font-size: 25px;
+       margin: 0 20%;
+       transition: all 0.1s ease;
+   }
+   #res-nav .basket-res a:hover{
+       color: rgb(255, 92, 92);
    }
    #res-nav .search-res{
        display: flex;
        align-items: center;
-       width: 80%;
-       margin: 0 2%;
+       order: 3;
+       height: 20%;
+       width: 90%;
+       right: 3%;
+       left: 5%;
+       margin-top: 2%;
+       position: absolute;
+       top: 58%;
    }
    #res-nav .search-res input{
-       height: 50%;
+       height: 150%;
        width: 100%;
        padding: 0 20px;
        font-size: 17px;
        border-radius: 0px 5px 5px 0px;
        border: 1px solid gray;
    }
-   #res-nav .fas{
+   #res-nav .fa-search{
         background-color: rgb(122, 136, 84);
         margin: auto;
         font-size: 20px;
         height: 100%;
-        padding: 17% 20px;
+        padding: 11% 20px;
         text-align: center;
         color: white;
         border-radius: 5px 0px 0 5px;
@@ -77,8 +104,9 @@
    }
    /*------------ mobile res--------- */
 
-   ul{
+   .list-res{
        display: flex;
+       position: relative;
        flex-wrap: wrap;
        justify-content: space-between;
        align-items: center;
@@ -89,40 +117,39 @@
        background: transparent;
       
     }
-   ul:hover{
+   .list-res:hover{
        z-index: 1;
        text-align: center;
        overflow: none;
        margin-top: 10px;
-       width: 40%;
+       width: 100%;
        height: 520px;
        border-radius: 0 0 5px 5px;
        box-shadow: 5px 0px 5px rgb(12, 12, 12);
-       background: linear-gradient(to bottom,rgb(124, 124, 124) , rgb(70, 70, 70), rgb(61, 61, 59));
-       background-color: black;
+       background: linear-gradient(to bottom,rgba(124, 124, 124, 0.9) , rgba(70, 70, 70, 0.9), rgba(61, 61, 59, 0.9));
     }
-   #res-nav ul .toggle .bars{
+   #res-nav .list-res .toggle .bars{
        font-size: 30px;
        color: aliceblue;
        background-color: transparent;
    }
-   #res-nav ul .toggle{
+   #res-nav .list-res .toggle{
        cursor: pointer;
        order: 1;
    }
-   #res-nav ul .buttom{
+   #res-nav .list-res .buttom{
        order: 2;
    }
-   #res-nav ul .tag{
+   #res-nav .list-res .tag{
        width: 100%;
        text-align: center;
        order: 3;
    }
-   #res-nav ul .tag:hover{
+   #res-nav .list-res .tag:hover{
        background-color: rgba(0, 0, 0, 0.4);
        transform: scale(1.1);
    }
-   #res-nav ul .buttom:hover{
+   #res-nav .list-res .buttom:hover{
     background-color: rgb(122, 136, 84);
    }
 
@@ -183,8 +210,18 @@
 
     /* End page 2 */
 
+    /* footer */
+    #footer .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #footer .row h2{
+        font-size: 120%;
+        margin-top: 5%;
+    }
+
  }
-/* start mobil */
+/* start mobile */
  @media screen and (max-width : 776px){
     #shop .off {
         height: auto;
@@ -210,7 +247,29 @@
         width: 100%;
         margin: 10px 2px;
     }
+
+
+    /* shop page 1 */
+    #shop-page1{
+        width: 99%;
+        overflow: hidden;
+    }
+    #shop-page1 .stor{
+        flex-direction: column;
+    }
+    #shop-page1 .stor .title-box{
+        font-size: 20px;
+        text-shadow: none;
+        color: white;
+        background-color: rgb(60, 63, 53);
+    }
+    #shop-page1 .box-shop{
+        width: 100%;
+        margin: auto;
+        margin-top: 10%;
+    }
  }
     /* End page 2 */
+
     
- /* start mobil */
+ /* start mobile */

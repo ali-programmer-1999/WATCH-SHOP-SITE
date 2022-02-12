@@ -5,8 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     object-fit: cover;
+    overflow:-moz-hidden-unscrollable;
 }
 a{
     text-decoration: none;
@@ -120,6 +121,7 @@ nav{
 #fixed .search a{
     background-color: rgb(122, 136, 84);
     height: 100%;
+    font-size: 16px;
     width: 10%;
     margin: auto;
     padding: 9px 40px;
@@ -186,7 +188,7 @@ nav{
     text-decoration: none;
     font-size: 21px;
     color: white;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
 }
 #fixed .order a:hover{
     color: rgb(240, 90, 90);
@@ -436,44 +438,44 @@ nav{
 /* ==================== end brand =================== */
 
 /* ==================== start shop =================== */
-#shop{
+#shop-page1{
     margin: 4% auto;
     box-shadow: 0px 0px 15px 3px gray;
     width: 90%;
 }
-#shop .stor{
+#shop-page1 .stor{
     display: flex;
     flex-direction: row;
 }
-#shop .title{
+#shop-page1 .title{
     text-align: center;
     font-size: 40px;
     width: 100%;
 }
-#shop img{
+#shop-page1 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#shop .box-shop{
+#shop-page1 .box-shop{
     width: 50%;
     height: 700px;
     display: flex;
     margin: 2% 5%;
     flex-direction: column;
 }
-#shop .box-shop .continer-shop::-webkit-scrollbar{
+#shop-page1 .box-shop .continer-shop::-webkit-scrollbar{
     width: 20px;
 }
-#shop .box-shop .continer-shop::-webkit-scrollbar-track{
+#shop-page1 .box-shop .continer-shop::-webkit-scrollbar-track{
     background: linear-gradient(to bottom,rgb(128, 128, 126), rgb(70, 70, 70), rgb(124, 124, 124));
 }
-#shop .box-shop .continer-shop::-webkit-scrollbar-thumb{
+#shop-page1 .box-shop .continer-shop::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom,rgb(160, 160, 60), rgb(181, 190, 145), rgb(124, 124, 124));
     border-radius: 50px;
     height: 20px;
 }
-#shop .box-shop .continer-shop{
+#shop-page1 .box-shop .continer-shop{
     width: 100%;
     height: 700px;
     display: flex;
@@ -483,7 +485,7 @@ nav{
     border-radius: 5px;
     border: 1px solid rgb(192, 192, 192);
 }
-#shop .box-shop .continer-shop .item-shop{
+#shop-page1 .box-shop .continer-shop .item-shop{
     display: flex;
     background-color: transparent;
     width: 100%;
@@ -496,31 +498,31 @@ nav{
     border: 1px solid gray;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.4);
 }
-#shop .item-shop a{
+#shop-page1 .item-shop a{
     width: 50%;
     height: 100%;
 }
-#shop .item-shop a:hover{
+#shop-page1 .item-shop a:hover{
     transform: scale(1.1);
 }
-#shop .item-shop h2{
+#shop-page1 .item-shop h2{
     width: 50%;
     font-size: 16px;
     text-align: center;
     margin: auto;
     color: rgb(41, 41, 41);
 }
-#shop .item-shop h2 strong{
+#shop-page1 .item-shop h2 strong{
     font-size: 18px;
     color: #000000;
 }
-#shop .title-box{
+#shop-page1 .title-box{
     text-align: center;
     color: #2d360f;
     margin-bottom: 2%;
     text-shadow: 10px 10px 10px rgb(109, 109, 109);
 }
-#shop .item-shop h2 span{
+#shop-page1 .item-shop h2 span{
     font-size: 12px;
     color: red;
 }
@@ -551,7 +553,7 @@ nav{
 }
 #footer .row .item h2{
     color: #555;
-    font-size: 110%;
+    font-size:20px;
     font-weight: 700;
     padding-bottom: 10px;
 }
