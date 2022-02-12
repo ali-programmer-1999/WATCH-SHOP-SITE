@@ -157,4 +157,60 @@
        text-align: center;
    }
     /* finish gift */
-}
+
+    /* page 2 */
+    #shop .shop-left {
+        width: 0;
+        height: auto;
+        display: none;
+     }
+     #shop .shop-right {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+    }
+    #shop .wellcom ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        height: 80px;
+        transition: all 0.3s ease;
+        width: 100%;
+        background: transparent;
+    }
+
+    /* End page 2 */
+
+ }
+/* start mobil */
+ @media screen and (max-width : 776px){
+    #shop .off {
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #shop .off-left {
+        width: 100%;
+        height: 100%;
+    }
+    #shop .off-right {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+    #shop .watches .watches-item {
+        flex-wrap: wrap;
+    }
+    #shop .watches .watches-item .item {
+        width: 47.6%;
+    }
+    #shop .customer-1 {
+        width: 100%;
+        margin: 10px 2px;
+    }
+ }
+    /* End page 2 */
+    
+ /* start mobil */
